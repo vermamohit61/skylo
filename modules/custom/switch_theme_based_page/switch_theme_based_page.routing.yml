@@ -1,0 +1,7 @@
+switch_theme_based_page.settings:
+  path: '/admin/config/system/switch_theme_based_page'
+  defaults:
+    _form: '\Drupal\switch_theme_based_page\Form\SwitchPageThemeSettingForm'
+    _title: 'Switch Theme Based Page'
+  requirements:
+    _permission: 'administer site configuration'

@@ -1,0 +1,6 @@
+services:
+  theme.negotiator.switch_theme_based_page:
+    class: Drupal\switch_theme_based_page\Theme\PageThemeNegotiator
+    arguments: ['@config.factory', '@path.current', '@path.matcher', '@current_user', '@module_handler', '@request_stack', '@?domain.negotiator', '@?language_manager']
+    tags:
+      - { name: theme_negotiator, priority: 1 }
